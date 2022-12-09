@@ -1,0 +1,185 @@
+.white {
+    color: white;
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+}
+
+.triangle-background {
+  margin-bottom: -1px;
+  height: 200px;
+  width: 100%;
+  background: black;
+  clip-path: polygon(0% 0%, 0% 100%, 100% 99.5%)
+}
+  
+.contact-me-section {
+    width: 100%;
+    background-color: black !important;
+}
+
+.contact-me-section h2 {
+    margin-top: 0;
+    font-size: 78px;
+    color: white;
+}
+
+.cotact-me-greeting {
+    width: 80%;
+    margin: auto;
+}
+
+.contact-me-form-headline {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.contact-me-form-headline h3 {
+    margin: 5px 0;
+    font-size: 32px;
+    color: #5988FF;
+}
+
+.contact-form {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+
+.mat-form-field {
+    width: 70%;
+}
+
+.mat-form-field input {
+    border-bottom: white;
+}
+
+
+::ng-deep {
+  /** Overrides caret & text color **/
+  .contact-form.mat-form-field-appearance-legacy .mat-input-element {
+    caret-color: #fff  !important;
+    color: #fff  !important;
+  }
+  .mat-form-field-label,
+  .mat-focused {
+    color: #fff  !important;
+  }
+  /* Border */
+   .mat-form-field-appearance-outline .mat-form-field-outline {
+     color: #fff  !important;
+  }
+
+  .mat-form-field-underline {
+    /*change color of underline*/
+    background-color: #fff !important;
+  } 
+
+  /* Font color */
+  input.mat-input-element {
+    color: #fff !important;
+    caret-color: #fff !important;
+  }
+  .mat-form-field-ripple {
+    background-color: #fff  !important;
+  }
+  textarea {
+    color: #fff !important;
+    caret-color: #fff  !important;
+  }
+}
+
+.form-button {
+    margin-top: 20px;
+    transition: transform 225ms ease-in-out;
+    font-size: 23px;
+    width: 250px;
+    color: white;
+    background-color: transparent;
+    border: 3px solid white;
+    padding: 10px 25px;
+}
+
+.form-button:hover {
+    cursor: pointer;
+    transform: scaleX(1.1);
+    font-weight: bold;
+}
+
+.contact-me-footer {
+  padding: 20px 0;
+  width: 90%;
+  margin: auto ;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy-right span {
+  font-size: 24px;
+}
+
+.copyright img{
+  height: 64px;
+  width: auto;
+}
+
+.social-media {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-arrow {
+  position: absolute;
+  top: -80px;
+  right: -5px;
+}
+
+.footer-arrow:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.social-media div {
+  // margin-bottom: 20px;
+  width: 200px;
+  color: white;
+  text-align: right;
+}
+
+.social-media-icons {
+  width: 200px;
+  display: flex;
+  justify-content: space-between; 
+}
+
+.social-media-icons img:hover {
+  cursor: pointer;
+  margin-top: -5px;
+}
+
+
+.social-media-icons img {
+  height: 32px;
+  width: 32px;
+}
+
+

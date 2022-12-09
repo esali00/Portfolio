@@ -1,0 +1,55 @@
+<div class="contact-me">
+    <div class="triangle-background"></div>
+
+    <div class="contact-me-section">
+        <div class="cotact-me-greeting">
+            <h2>Say Hi!</h2>
+        </div>
+        
+        <div class="contact-me-form-headline">
+            <h3 id="lets-talk">Want to discuss a new project?</h3>
+            <p>Say hello! let's discuss your ideas and make it happen</p>
+        </div>
+        
+        <form (submit)="sendMail()" ngNativeValidate #myForm id="contact-form" class="contact-form">
+            <mat-form-field class="example-full-width">
+              <mat-label>Your name</mat-label>
+              <input required #nameField name="name" id="name" class="white" matInput placeholder="" value="">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Your email</mat-label>
+                <input required id="email" class="white" matInput placeholder="" value="">
+              </mat-form-field>
+          
+            <mat-form-field class="example-full-width">
+              <mat-label>Leave a comment</mat-label>
+              <textarea required #messageField name="message" id="message" rows="10" class="white" matInput placeholder="Your message"></textarea>
+            </mat-form-field>
+
+            <button #formButton class="form-button">
+                Send message
+            </button>
+          </form>
+
+        <div class="contact-me-footer">
+            <div class="copyright">
+                <img src="../../assets/img/introduction/initials_logo_white.png">
+                <span>&copy; Emir Salihovic 2022</span>
+            </div>
+
+            <div class="social-media">
+               <img (click)="scrollToTop()" class="footer-arrow d-none" src="../../assets/img/arrows/footer_arrow.svg">
+               <div class="social-media-icons">
+                  <img src="../../assets/img/footer/github_icon.svg">
+                  <img src="../../assets/img/footer/email_icon.svg">
+                  <img src="../../assets/img/footer/linkedin_icon.svg">
+               </div>
+               <div class="legal-notice">
+                Legal Notice
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+

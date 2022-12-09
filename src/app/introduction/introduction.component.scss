@@ -1,0 +1,90 @@
+.introduction {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.send-a-message-btn {
+    display: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 21px;
+    background-color: transparent;
+    border: 3px solid black;
+    padding: 10px 15px;
+}
+
+.send-a-message-btn:hover {
+    cursor: pointer;
+    transform: scaleX(1.05);
+    font-weight: bold;
+}
+
+.introduction-profession {
+    text-align: center;
+    font-size: 128px;
+    margin: 0;
+}
+
+.caption {
+    display: flex;
+    align-items: center;
+}
+
+.underline {
+    height: 5px;
+    width: 330px;
+    background-color: black;
+}
+
+.small-caption-name {
+    margin: 0px;
+    font-family: 'Overpass', 'sans-serif';
+    color: #5988FF;
+    font-size: 48px;
+}
+
+.scroll-area {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scroll-notice { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.arrow-animation-area {
+    height: 64px;
+    overflow: hidden;
+}
+
+.arrow-down {
+    height: 48px;
+    animation: ArrowUpandDown-Animation 1.5s ease-in-out infinite
+}
+
+.side-email {
+    font-size: 14px;
+    margin-left: -50px;
+    transform: rotate(90deg);
+}
+
+@keyframes ArrowUpandDown-Animation {
+    0% {
+        margin-top: -128px;
+        padding-bottom: 20px ;
+    }
+
+    100% {
+        margin-bottom: -128px;
+    }
+}

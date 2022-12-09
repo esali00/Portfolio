@@ -1,0 +1,124 @@
+.navbar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.it-icon {
+    height: 64px;
+    width: auto;
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 32px;
+    width: auto;
+}
+
+.links {
+    position: relative;
+    height: 325px;
+}
+
+.links a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    font-size: 54px;
+    padding: 10px 30px;   
+}
+
+.about-me-link::after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin-left: -5px; /* This will center the border. */
+    margin-top: -5px;
+    width: 10%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-left: 5px solid black;
+    border-bottom: 5px solid black; /* This creates the border. Replace black with whatever color you want. */
+}
+
+.my-skills-link::after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin-left: -5px; /* This will center the border. */
+    margin-top: -5px;
+    width: 10%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-left: 5px solid black;
+    border-bottom: 5px solid black; /* This creates the border. Replace black with whatever color you want. */
+}
+
+.portfolio-link::after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin-left: -5px; /* This will center the border. */
+    margin-top: -5px;
+    width: 10%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-left: 5px solid black;
+    border-bottom: 5px solid black; /* This creates the border. Replace black with whatever color you want. */
+}
+
+
+.close-icon {
+    cursor: pointer;
+    font-size: 32px;
+    width: auto;
+}
+
+.contact-footer-menu {
+    width: 90%;
+    margin: auto;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-footer-text {
+    color: white;
+}
+
+.contact-footer-text h1 {
+    font-size: 36px;
+}
+
+.contact-footer-text h1:hover {
+    cursor: default;
+    color: #5988FF;
+}
+
+.triangle-background {
+    border-style: solid;
+    border-width: 10vh 0 120px 100vw;
+    border-color: transparent transparent black black;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.social-media-icons {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;    
+}
+
+.social-media-icons img:hover {
+    cursor: pointer;
+    margin-top: -5px;
+}
