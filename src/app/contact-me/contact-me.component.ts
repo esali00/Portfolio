@@ -1,5 +1,6 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-contact-me',
@@ -13,7 +14,7 @@ export class ContactMeComponent implements OnInit {
   @ViewChild('messageField') messageField: ElementRef;
   @ViewChild('formButton') formButton: ElementRef;
 
-  constructor() { }
+  constructor(public viewportscroller: ViewportScroller) { }
 
   ngOnInit(): void {
     this.scrollToTop()
@@ -45,8 +46,7 @@ export class ContactMeComponent implements OnInit {
   }
 
   scrollToTop() {
-    console.log("scroll")
-    window.scrollTo(0, 0);
+    this.viewportscroller.scrollToPosition([0, 0])
   }
  
 }

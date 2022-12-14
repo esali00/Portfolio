@@ -14,6 +14,7 @@ import { MatFormFieldDefaultOptions, MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@ang
 import { MenuComponent } from './menu/menu.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { StartComponent } from './start/start.component';
+import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 
 
 const appearance: MatFormFieldDefaultOptions = {
@@ -31,6 +32,7 @@ const appearance: MatFormFieldDefaultOptions = {
     MenuComponent,
     NavbarComponent,
     StartComponent,
+    LegalNoticeComponent,
   ],
   imports: [
     BrowserModule,
