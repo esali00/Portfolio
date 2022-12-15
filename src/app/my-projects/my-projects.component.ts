@@ -22,7 +22,7 @@ export class MyProjectsComponent implements OnInit {
   }
 
   hoverProjectImg() {
-    for (let i = 1; i <= 4; i++) {
+    for (let i = 1; i <= 5; i++) {
       if (i % 2 == 0) {
         document.querySelector<HTMLDivElement>(`.project-reverse-${i}`).addEventListener("mouseover", () => {
           document.querySelector<HTMLDivElement>(`.prasentation-project-btn-container-${i}`).style.display = "block"
@@ -52,7 +52,7 @@ export class MyProjectsComponent implements OnInit {
   }
 
   noHoverProjectImg() {
-    for (let i = 1; i <= 4; i++) {
+    for (let i = 1; i <= 5; i++) {
       if (i % 2 == 0) {
         document.querySelector<HTMLDivElement>(`.project-reverse-${i}`).addEventListener("mouseout", () => {
           document.querySelector<HTMLDivElement>(`.prasentation-project-btn-container-${i}`).style.display = "none"

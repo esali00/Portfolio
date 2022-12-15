@@ -43,6 +43,10 @@ export class ContactMeComponent implements OnInit {
         body: fd
       }
     )
+
+    nameField.disabled = false
+    messageField.disabled = false
+    formButton.disabled = false
   }
 
   scrollToTop() {

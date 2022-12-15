@@ -15,6 +15,7 @@ import { MenuComponent } from './menu/menu.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { StartComponent } from './start/start.component';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 const appearance: MatFormFieldDefaultOptions = {
@@ -39,6 +40,8 @@ const appearance: MatFormFieldDefaultOptions = {
     AppRoutingModule,
     MatInputModule,
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [ 
   {

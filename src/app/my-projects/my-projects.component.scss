@@ -132,7 +132,7 @@
 
 .project-img {
     box-sizing: border-box;
-    background-image: url("../../assets/img/portfolio/new_join_background.png");
+    background-image: url("../../assets/img/portfolio/join_background.jpg");
     background-repeat: no-repeat;
     background-size: 350px 250px;
     background-position: center;
@@ -143,7 +143,7 @@
 
 .project-img-2 {
     box-sizing: border-box;
-    background-image: url("../../assets/img/portfolio/el_pollo_loco_background.jpg");
+    background-image: url("../../assets/img/portfolio/new_el_pollo_loco_background.jpg");
     background-repeat: no-repeat;
     background-size: 350px 250px;
     background-position: center center;
@@ -166,6 +166,17 @@
 .project-img-4 {
     box-sizing: border-box;
     background-image: url("../../assets/img/portfolio/laptop_ringoffire.png");
+    background-repeat: no-repeat;
+    background-size: 350px 250px;
+    background-position: center center;
+    border: 5px solid transparent;
+    width: 350px;
+    height: 250px;
+}
+
+.project-img-5 {
+    box-sizing: border-box;
+    background-image: url("../../assets/img/portfolio/portfolio_background.jpg");
     background-repeat: no-repeat;
     background-size: 350px 250px;
     background-position: center center;
