@@ -1,4 +1,5 @@
 .about-me {
+    overflow: hidden;
     width: 90%;
     margin: auto;
 }
@@ -49,6 +50,7 @@
 
 .about-me-border-container {
     position: relative;
+    height: 380px;
 }
 
 .about-me-photo {

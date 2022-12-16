@@ -31,6 +31,7 @@
     margin: 50px 0;
     display: flex;
     justify-content: space-between;
+    align-items: center !important;
     // flex-direction: row-reverse;
 }
 
@@ -39,6 +40,7 @@
     margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
+    align-items: center !important;
     // flex-direction: row-reverse;
 }
 
@@ -238,9 +240,9 @@
     // padding: 0 100px;
 }
 
-.project-info-reverse p {
-    width: 400px;
-}
+// .project-info-reverse p {
+//     width: 400px;
+// }
 
 .project-info h4 {
     margin: 0;

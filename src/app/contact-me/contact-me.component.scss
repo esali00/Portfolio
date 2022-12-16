@@ -22,6 +22,7 @@
 
 .contact-me-section h2 {
     margin-top: 0;
+    margin-bottom: 40px;
     font-size: 78px;
     color: white;
 }
@@ -166,6 +167,7 @@
 }
 
 .social-media-icons {
+  margin-top: 10px;
   width: 200px;
   display: flex;
   justify-content: space-between; 
@@ -176,12 +178,11 @@
   margin-top: -5px;
 }
 
-
 .social-media-icons img {
   height: 32px;
   width: 32px;
 }
 
-.legal-notice span {
+.imprint-and-legal-notice span {
   cursor: pointer;
 }

@@ -26,9 +26,11 @@ export class MyProjectsComponent implements OnInit {
       if (i % 2 == 0) {
         document.querySelector<HTMLDivElement>(`.project-reverse-${i}`).addEventListener("mouseover", () => {
           document.querySelector<HTMLDivElement>(`.prasentation-project-btn-container-${i}`).style.display = "block"
-          document.querySelector<HTMLDivElement>(`.border-img-${i}`).style.border = "5px solid black"
-          // document.querySelector<HTMLDivElement>(`.border-img-${i}`).style.top = "70px"
-          // document.querySelector<HTMLDivElement>(`.border-img-${i}`).style.right = "5px"
+          if (window.innerWidth < 400) {
+            document.querySelector<HTMLDivElement>(`.border-img-${i}`).style.border = "3px solid black"
+          } else {
+            document.querySelector<HTMLDivElement>(`.border-img-${i}`).style.border = "5px solid black"
+          }
           document.querySelector<HTMLDivElement>(`.project-arrow-circle-${i}`).style.backgroundColor = "black";
           document.querySelector<HTMLDivElement>(`.project-arrow-${i}`).style.opacity = "1";
           document.querySelector<HTMLDivElement>(`.project-arrow-${i}`).style.animation = "swingArrowUpRight 225ms ease-in-out";
@@ -37,9 +39,11 @@ export class MyProjectsComponent implements OnInit {
       } else {
         document.querySelector<HTMLDivElement>(`.project-${i}`).addEventListener("mouseover", () => {
           document.querySelector<HTMLDivElement>(`.prasentation-project-btn-container-${i}`).style.display = "block"
-          document.querySelector<HTMLDivElement>(`.border-img-${i}`).style.border = "5px solid black"
-          // document.querySelector<HTMLDivElement>(`.border-img-${i}`).style.top = "70px"
-          // document.querySelector<HTMLDivElement>(`.border-img-${i}`).style.left = "5px"
+          if (window.innerWidth < 400) {
+            document.querySelector<HTMLDivElement>(`.border-img-${i}`).style.border = "3px solid black"
+          } else {
+            document.querySelector<HTMLDivElement>(`.border-img-${i}`).style.border = "5px solid black"
+          }
           document.querySelector<HTMLDivElement>(`.project-arrow-circle-${i}`).style.backgroundColor = "black";
           document.querySelector<HTMLDivElement>(`.project-arrow-${i}`).style.opacity = "1";
           document.querySelector<HTMLDivElement>(`.project-arrow-${i}`).style.animation = "swingArrowUpRight 225ms ease-in-out";
@@ -56,9 +60,11 @@ export class MyProjectsComponent implements OnInit {
       if (i % 2 == 0) {
         document.querySelector<HTMLDivElement>(`.project-reverse-${i}`).addEventListener("mouseout", () => {
           document.querySelector<HTMLDivElement>(`.prasentation-project-btn-container-${i}`).style.display = "none"
-          document.querySelector<HTMLDivElement>(`.border-img-${i}`).style.border = "5px solid transparent"
-          // document.querySelector<HTMLDivElement>(`.border-img-${i}`).style.top = "70px"
-          // document.querySelector<HTMLDivElement>(`.border-img-${i}`).style.right = "5px"
+          if (window.innerWidth < 400) {
+            document.querySelector<HTMLDivElement>(`.border-img-${i}`).style.border = "3px solid transparent"
+          } else {
+            document.querySelector<HTMLDivElement>(`.border-img-${i}`).style.border = "5px solid transparent"
+          }
           document.querySelector<HTMLDivElement>(`.project-arrow-circle-${i}`).style.backgroundColor = "transparent";
           document.querySelector<HTMLDivElement>(`.project-arrow-${i}`).style.opacity = "0";
           document.querySelector<HTMLDivElement>(`.project-arrow-${i}`).style.animation = "";
@@ -67,9 +73,11 @@ export class MyProjectsComponent implements OnInit {
       } else {
         document.querySelector<HTMLDivElement>(`.project-${i}`).addEventListener("mouseout", () => {
           document.querySelector<HTMLDivElement>(`.prasentation-project-btn-container-${i}`).style.display = "none"
-          document.querySelector<HTMLDivElement>(`.border-img-${i}`).style.border = "5px solid transparent"
-          // document.querySelector<HTMLDivElement>(`.border-img-${i}`).style.top = "70px"
-          // document.querySelector<HTMLDivElement>(`.border-img-${i}`).style.left = "5px"
+          if (window.innerWidth < 400) {
+            document.querySelector<HTMLDivElement>(`.border-img-${i}`).style.border = "3px solid transparent"
+          } else {
+            document.querySelector<HTMLDivElement>(`.border-img-${i}`).style.border = "5px solid transparent"
+          }
           document.querySelector<HTMLDivElement>(`.project-arrow-circle-${i}`).style.backgroundColor = "transparent";
           document.querySelector<HTMLDivElement>(`.project-arrow-${i}`).style.opacity = "0";
           document.querySelector<HTMLDivElement>(`.project-arrow-${i}`).style.animation = "";

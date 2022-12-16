@@ -15,7 +15,7 @@ const routes: Routes = [
   {path: "about-me", component: AboutMeComponent},
   {path: "my-skills", component: MySkillsComponent},
   {path: "portfolio", component: MyProjectsComponent},
-  {path: "legal-notice", component: LegalNoticeComponent},
+  {path: "imprint&legal-notice", component: LegalNoticeComponent},
 ];
 
 @NgModule({

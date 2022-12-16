@@ -81,6 +81,9 @@ body,html {
 }
 
 @media (max-width: 1004px) {
+  .about-me-button {
+    margin-bottom: 50px !important;
+  }
   .counter h3 {
     display: none;
   }
@@ -94,11 +97,11 @@ body,html {
     padding: 0;
   }
   .counter {
-    width: 350px !important;
+    width: 45% !important;
     margin-top: 30px;
   }
   .counter-reverse {
-    width: 350px !important;
+    width: 45% !important;
     margin-top: 30px;
   }
   .my-projects {
@@ -109,7 +112,7 @@ body,html {
     align-items: center;
   }
   .project-info {
-    width: 100% !important;
+    width: 320px !important;
   }
   .project-info-reverse {
     width: 100% !important;
@@ -126,7 +129,7 @@ body,html {
   .border-img-reverse {
     top: 10px !important;
     // right: 10px;
-    left: 45%;
+    left: 45% !important;
     transform: translate(-45%, 0);
   }
 }
@@ -136,6 +139,8 @@ body,html {
       font-size: 64px !important;
     }
     .underline {
+      margin-bottom: -5px;
+      height: 3px !important;
       width: 160px !important;
     }
     .small-caption-name {
@@ -156,18 +161,25 @@ body,html {
       align-items: center;
     }
     .about-me-photo {
-      width: 300px !important;
-      height: 300px !important;
+      margin-right: 0 !important;
     }
     .border-hover {
-      width: 300px !important;
-      height: 300px !important;
+      left: 35px;
+    }
+    .counter {
+      width: 60% !important;
+    }
+    .counter-reverse {
+      width: 60% !important;
     }
     .project-info-reverse {
-      width: 320px !important;
+      width: 300px !important;
     }
     .project-info-reverse p {
       width: 300px !important;
+    }
+    .prasentation-btn-container {
+      width: 320px !important;
     }
     .about-me-button {
       display: none;
@@ -194,6 +206,9 @@ body,html {
   .small-caption-name {
     font-size: 20px !important;
   }
+  .side-email {
+    margin-top: -55px;
+  }
   .scroll-area {
     margin: 60px auto !important;
   }
@@ -201,6 +216,18 @@ body,html {
     text-align: center;
     font-size: 48px !important;
     margin: 0;
+  }
+  .project {
+    align-items: flex-start !important;
+  }
+  .project-reverse {
+    align-items: flex-start !important;
+  }
+  .project-info-reverse {
+    width: 100% !important;
+  }
+  .project-info-reverse p {
+    width: 100% !important;
   }
   .my-project-container h2 {
     font-size: 48px !important;
@@ -210,18 +237,25 @@ body,html {
     margin-top: -35.5px !important;
   }   
   .project-info {
-    width: 320px !important; 
-    margin-left: -50px;
+    width: 275px !important; 
+    margin-left: -25px;
   }
   .project-info-reverse {
-    width: 320px !important; 
-    margin-left: -50px;
+    width: 275px !important; 
+    margin-left: -25px;
+  }
+  .project-img {
+    width: 275px !important;
   }
   .border-img {
+    border: 5px solid transparent;
+    width: 275px !important;
     left: 50%;
   }
   .border-img-reverse {
-    left: 50%;
+    border: 5px solid transparent;
+    width: 275px !important;
+    left: 40% !important;
   }
   .counter-mobile {
     width: 310px !important;
@@ -230,8 +264,8 @@ body,html {
     width: 40px !important;
   }
   .prasentation-btn-container {
-    margin-left: -50px !important;
-    width: 320px !important;
+    margin-left: -25px !important;
+    width: 300px !important;
   }
   .project-arrow-circle {
     width: 50px !important;
@@ -242,6 +276,9 @@ body,html {
     width: 50px !important;
     height: 50px !important;
     margin-left: -25px !important;
+  }
+  .contact-me-form-headline h3 {
+    font-size: 21px !important;
   }
   .contact-me-footer {
      flex-direction: column;
@@ -259,10 +296,24 @@ body,html {
     justify-content: center;
   }
   .form-button {
-    width: 190px !important;
+    font-size: 16px !important;
+    width: 145px !important;
     padding: 10px 15px !important;
   }
+  .footer-arrow {
+    margin-right: -45px;
+  }
+
 }
+
+// @media (max-width: 400px) {
+//   .border-img {
+//     left: 53% !important;
+//   }
+//   .border-img-reverse {
+//     left: 43% !important;
+//   }
+// }
 
 /* overpass-regular - latin */
 @font-face {
