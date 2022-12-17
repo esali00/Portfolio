@@ -1,6 +1,6 @@
-<div [class.padding-top-small-30]="router.url !== '/'" class="my-skills-container">
-    <div [class.d-none]="router.url !== '/'" class="right-arrow-container">
-        <img data-aos="fade-down-left" data-aos-duration="1500" class="rotated-left-arrow" src="../../assets/img/arrows/left-rotated-arrow.svg">
+<div class="my-skills-container">
+    <div class="right-arrow-container">
+        <img data-aos="fade-down-left" data-aos-duration="1500" class="rotated-left-arrow" src="assets/img/arrows/left-rotated-arrow.svg">
     </div>
     
     <div class="my-skills">
@@ -10,13 +10,13 @@
 
         <div class="my-skill-icons-container">
             <div class="skill-icon" *ngFor="let icon of icons">
-                <img src="../../assets/img/my-skills/{{ icon }}.svg">    
+                <img src="assets/img/my-skills/{{ icon }}.svg">    
                 <span>{{ icon.split("_")[0] }}</span>
             </div>
         </div>
     </div>
-    <div  [class.d-none]="router.url !== '/'" class="left-arrow-container">
-        <img data-aos="fade-down-right" data-aos-duration="1500" class="rotated-right-arrow" src="../../assets/img/arrows/right_rotated_arrow.svg">
+    <div class="left-arrow-container">
+        <img data-aos="fade-down-right" data-aos-duration="1500" class="rotated-right-arrow" src="assets/img/arrows/right_rotated_arrow.svg">
     </div>
 </div>
 

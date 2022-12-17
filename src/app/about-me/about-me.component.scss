@@ -1,7 +1,17 @@
 .about-me {
     overflow: hidden;
+    height: 100vh;
     width: 90%;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#about-me {
+    margin-left: 25px;
+    margin-top: -20px;
 }
 
 .about-me h2 {
@@ -17,17 +27,24 @@
 .about-me-content {
     display: flex;
     justify-content: center;
+    // flex-direction: column;
+}
+
+.about-me-text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about-me-left-content {
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
-.about-me-content p {
+.about-me-left-content p {
     margin: 0;
+    padding: 0px 25px;
+    padding-bottom: 20px;
 }
 
 .about-me-button {

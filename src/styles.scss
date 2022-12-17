@@ -81,6 +81,9 @@ body,html {
 }
 
 @media (max-width: 1004px) {
+  .about-me-left-content h2 {
+    font-size: 48px !important;
+  }
   .about-me-button {
     margin-bottom: 50px !important;
   }
@@ -135,6 +138,17 @@ body,html {
 }
 
 @media (max-width: 768px) {
+    .about-me-left-content h2 {
+      font-size: 32px !important;
+    }
+    #about-me {
+      margin-top: 0 !important;
+      margin-left: 0 !important;
+    }
+    .about-me-left-content p {
+      padding: 0 !important;
+      font-size: 14px !important;
+    }
     .introduction-profession {
       font-size: 64px !important;
     }
@@ -195,6 +209,16 @@ body,html {
     }
 }
 
+@media (max-width: 500px) {
+  .about-me-left-content h2 {
+    font-size: 28px !important;
+  }
+  .about-me-left-content p {
+    font-size: 12px !important;
+    width: 280px !important;
+  }
+}
+
 @media (max-width: 480px) {
   .introduction-profession {
     margin-top: 70px !important;
@@ -207,15 +231,25 @@ body,html {
     font-size: 20px !important;
   }
   .side-email {
-    margin-top: -55px;
+    margin-top: -55px !important;
+    margin-left: -55px !important;
   }
   .scroll-area {
     margin: 60px auto !important;
   }
   .about-me h2 {
     text-align: center;
-    font-size: 48px !important;
+    // font-size: 48px !important;
     margin: 0;
+  }
+  .skill-icon {
+    width: 105px !important;
+  }
+  .my-skills-caption-container {
+    height: 50px !important;
+  }
+  .my-skill-icons-container {
+    margin-bottom: 50px !important;
   }
   .project {
     align-items: flex-start !important;
@@ -238,11 +272,11 @@ body,html {
   }   
   .project-info {
     width: 275px !important; 
-    margin-left: -25px;
+    margin-left: -35px;
   }
   .project-info-reverse {
     width: 275px !important; 
-    margin-left: -25px;
+    margin-left: -35px;
   }
   .project-img {
     width: 275px !important;
@@ -264,7 +298,7 @@ body,html {
     width: 40px !important;
   }
   .prasentation-btn-container {
-    margin-left: -25px !important;
+    margin-left: -35px !important;
     width: 300px !important;
   }
   .project-arrow-circle {
@@ -306,14 +340,7 @@ body,html {
 
 }
 
-// @media (max-width: 400px) {
-//   .border-img {
-//     left: 53% !important;
-//   }
-//   .border-img-reverse {
-//     left: 43% !important;
-//   }
-// }
+
 
 /* overpass-regular - latin */
 @font-face {

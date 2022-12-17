@@ -1,5 +1,5 @@
-import { Component, HostListener, OnChanges, OnInit, SimpleChanges } from '@angular/core';
-import { BrowserDynamicTestingModule } from '@angular/platform-browser-dynamic/testing';
+import { Component, OnInit } from '@angular/core';
+import { OpenMenuService } from '../open-menu.service';
 
 @Component({
   selector: 'app-start',
@@ -7,12 +7,12 @@ import { BrowserDynamicTestingModule } from '@angular/platform-browser-dynamic/t
   styleUrls: ['./start.component.scss']
 })
 export class StartComponent implements OnInit {
+  openedMenu: any;
 
-  constructor() { }
+  constructor(private openMenuService: OpenMenuService) { }
 
   ngOnInit(): void {
     
   }
-
 
 }

@@ -18,6 +18,7 @@ import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
+
 const appearance: MatFormFieldDefaultOptions = {
   appearance: 'outline'
 };
@@ -51,4 +52,8 @@ const appearance: MatFormFieldDefaultOptions = {
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+constructor() {}
+ 
+}

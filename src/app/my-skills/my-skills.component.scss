@@ -17,7 +17,7 @@
 }
 
 .my-skills-caption-container {
-    height: 100px;
+    height: 70px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -37,7 +37,7 @@
 }
 
 .my-skill-icons-container {
-    margin-bottom: 100px;
+    margin-bottom: 70px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -53,6 +53,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.skill-icon span {
+    text-align: center;
 }
 
 .skill-icon:hover {
