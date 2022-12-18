@@ -1,6 +1,6 @@
 import { Component, ContentChild, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { OpenMenuService } from '../open-menu.service';
+
 
 @Component({
   selector: 'app-navbar',
@@ -9,7 +9,7 @@ import { OpenMenuService } from '../open-menu.service';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(public router: Router, private openMenuService: OpenMenuService) { }
+  constructor(public router: Router) { }
 
   ngOnInit(): void {
 

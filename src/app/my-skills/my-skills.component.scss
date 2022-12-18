@@ -31,10 +31,10 @@
     background: #F0DBC7;
 }
 
-.my-skills-caption-container h2:hover {
-    cursor: default;
-    color: #5988FF;
-}
+// .my-skills-caption-container h2:hover {
+//     cursor: default;
+//     color: #5988FF;
+// }
 
 .my-skill-icons-container {
     margin-bottom: 70px;
@@ -59,13 +59,13 @@
     text-align: center;
 }
 
-.skill-icon:hover {
-    cursor: default;
-    color: #5988FF;
-}
+// .skill-icon:hover {
+//     cursor: default;
+//     color: #5988FF;
+// }
 
 .skill-icon img:hover {
-    animation: circleMovement 225ms ease-in-out;
+    // animation: circleMovement 225ms ease-in-out;
     overflow: hidden;
 }
 
@@ -75,7 +75,7 @@
     }
     50% {
         height: 80px;
-        padding-bottom: 10px;
+        padding-bottom: 10px; 
     }
     75% {
         margin-right: 50px;

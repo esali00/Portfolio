@@ -9,7 +9,7 @@
     flex-direction: column;
 }
 
-#about-me {
+#about-me-title {
     margin-left: 25px;
     margin-top: -20px;
 }
@@ -19,10 +19,10 @@
     margin: 0;
 }
 
-.about-me h2:hover {
-    cursor: default;
-    color: #5988FF;
-}
+// .about-me h2:hover {
+//     cursor: default;
+//     color: #5988FF;
+// }
 
 .about-me-content {
     display: flex;

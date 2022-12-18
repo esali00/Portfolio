@@ -1,4 +1,5 @@
 .navbar {
+    height: 12vh;
     width: 90%;
     margin: auto;
     display: flex;
@@ -27,7 +28,11 @@
 
 .links {
     position: relative;
-    height: 325px;
+    height: 78vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
 }
 
 .links a {
@@ -42,8 +47,8 @@
 .about-me-link::after {
     content: ""; /* This is necessary for the pseudo element to work. */ 
     display: block; /* This will put the pseudo element on its own line. */
-    margin-left: -5px; /* This will center the border. */
-    margin-top: -5px;
+    margin-left: -20px; /* This will center the border. */
+    margin-top: -15px;
     width: 10%; /* Change this to whatever width you want. */
     padding-top: 20px; /* This creates some space between the element and the border. */
     border-left: 5px solid black;
@@ -53,8 +58,8 @@
 .my-skills-link::after {
     content: ""; /* This is necessary for the pseudo element to work. */ 
     display: block; /* This will put the pseudo element on its own line. */
-    margin-left: -5px; /* This will center the border. */
-    margin-top: -5px;
+    margin-left: -20px; /* This will center the border. */
+    margin-top: -15px;
     width: 10%; /* Change this to whatever width you want. */
     padding-top: 20px; /* This creates some space between the element and the border. */
     border-left: 5px solid black;
@@ -64,8 +69,8 @@
 .portfolio-link::after {
     content: ""; /* This is necessary for the pseudo element to work. */ 
     display: block; /* This will put the pseudo element on its own line. */
-    margin-left: -5px; /* This will center the border. */
-    margin-top: -5px;
+    margin-left: -20px; /* This will center the border. */
+    margin-top: -15px;
     width: 10%; /* Change this to whatever width you want. */
     padding-top: 20px; /* This creates some space between the element and the border. */
     border-left: 5px solid black;
@@ -99,10 +104,10 @@
     font-size: 36px;
 }
 
-.contact-footer-text h1:hover {
-    cursor: default;
-    color: #5988FF;
-}
+// .contact-footer-text h1:hover {
+//     cursor: default;
+//     color: #5988FF;
+// }
 
 .triangle-background {
     border-style: solid;

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { OpenMenuService } from '../open-menu.service';
+
 
 @Component({
   selector: 'app-start',
@@ -9,7 +9,7 @@ import { OpenMenuService } from '../open-menu.service';
 export class StartComponent implements OnInit {
   openedMenu: any;
 
-  constructor(private openMenuService: OpenMenuService) { }
+  constructor() { }
 
   ngOnInit(): void {
     

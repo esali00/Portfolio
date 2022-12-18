@@ -15,7 +15,8 @@ export class AboutMeComponent implements OnInit {
   }
 
   public onClick(id: string) {
-    this.viewportScroller.scrollToAnchor(id);
+    this.viewportScroller.setOffset([0,0]);
+    this.viewportScroller.scrollToAnchor(id)
   }
 
 }

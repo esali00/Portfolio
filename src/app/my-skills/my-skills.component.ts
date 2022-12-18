@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import * as AOS from "aos"
 
@@ -16,6 +16,27 @@ export class MySkillsComponent implements OnInit {
 
   ngOnInit(): void {
     AOS.init()
+    this.hoverCircleMovement()
+  }
+
+  // @HostListener("mouseover")
+  hoverCircleMovement() {
+   // animation: circleMovement 225ms ease-in-out
+   document.querySelectorAll<HTMLElement>(".skill-icon-img").forEach(skillIconImg => {
+    skillIconImg.addEventListener("mouseover", () => {
+      skillIconImg.style.animation = "circleMovement 225ms ease-in-out"
+    })
+   })
+  }
+
+  // @HostListener("mouseout")
+  nohoverCircleMovement() {
+   // animation: circleMovement 225ms ease-in-out
+   document.querySelectorAll<HTMLElement>(".skill-icon-img").forEach(skillIconImg => {
+    skillIconImg.addEventListener("mouseout", () => {
+      skillIconImg.style.animation = ""
+    })
+   })
   }
 
 }

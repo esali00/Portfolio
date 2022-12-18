@@ -29,10 +29,22 @@ export class AppComponent implements OnInit {
     });
   }
 
+  ngAfterViewChecked() {
+   let triangle_background_postion = document.querySelector<HTMLDivElement>(".triangle-background").getBoundingClientRect().top
+
+   if (triangle_background_postion < 75) {
+      document.querySelector<HTMLDivElement>(".navbar").style.display = "none"
+   } else {
+    document.querySelector<HTMLDivElement>(".navbar").style.display = "flex"
+   }
+  }
+
   scrollToAnchor(): void {
     try {
       if (this.fragment) {
-        document.querySelector('#' + this.fragment).scrollIntoView({behavior: "smooth"});
+        // document.querySelector('#' + this.fragment).scrollIntoView({behavior: "smooth"});
+        this.viewportScroller.setOffset([0,80])
+        this.viewportScroller.scrollToAnchor(this.fragment)
       }
     } catch (e) { }
   }

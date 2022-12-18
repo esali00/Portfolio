@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { OpenMenuService } from '../open-menu.service';
 
 
 @Component({
@@ -10,11 +9,8 @@ import { OpenMenuService } from '../open-menu.service';
 })
 export class MenuComponent implements OnInit {
 
-  constructor(public router: Router, private openMenuService: OpenMenuService) {}
+  constructor(public router: Router) {}
 
-  closeMenu() {
-    this.openMenuService.openedMenu = false
-  }
 
   ngOnInit(): void {
 

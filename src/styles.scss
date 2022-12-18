@@ -215,7 +215,8 @@ body,html {
   }
   .about-me-left-content p {
     font-size: 12px !important;
-    width: 280px !important;
+    width: 90% !important;
+    margin: auto !important;
   }
 }
 
@@ -243,7 +244,7 @@ body,html {
     margin: 0;
   }
   .skill-icon {
-    width: 105px !important;
+    width: 110px !important;
   }
   .my-skills-caption-container {
     height: 50px !important;
@@ -310,6 +311,9 @@ body,html {
     width: 50px !important;
     height: 50px !important;
     margin-left: -25px !important;
+  }
+  .contact-form {
+    width: 95% !important;
   }
   .contact-me-form-headline h3 {
     font-size: 21px !important;

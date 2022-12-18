@@ -14,12 +14,12 @@
         <form (submit)="sendMail()" ngNativeValidate #myForm id="contact-form" class="contact-form">
             <mat-form-field class="example-full-width">
               <mat-label>Your name</mat-label>
-              <input required #nameField name="name" id="name" class="white" matInput placeholder="" value="">
+              <input pattern="^[a-zA-Z ]*$" required #nameField name="name" id="name" class="white" matInput placeholder="" value="">
             </mat-form-field>
 
             <mat-form-field class="example-full-width">
                 <mat-label>Your email</mat-label>
-                <input required id="email" class="white" matInput placeholder="" value="">
+                <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required id="email" class="white" matInput placeholder="" value="">
               </mat-form-field>
           
             <mat-form-field class="example-full-width">
