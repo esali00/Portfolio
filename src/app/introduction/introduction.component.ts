@@ -14,6 +14,7 @@ export class IntroductionComponent implements OnInit {
   }
 
   public onClick(id: string) {
+    this.viewportScroller.setOffset([0, -5])
     this.viewportScroller.scrollToAnchor(id);
   }
 

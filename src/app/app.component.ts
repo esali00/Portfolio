@@ -1,9 +1,7 @@
 import { ViewportScroller } from '@angular/common';
-import { AfterViewChecked, AfterViewInit, Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
-import * as Aos from 'aos';
-
-  
+import { AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
+import { Router, ActivatedRoute} from '@angular/router';
+import * as AOS from 'aos';
 
 
 @Component({
@@ -11,7 +9,7 @@ import * as Aos from 'aos';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit,AfterViewInit {
   title = 'portfolio';
   fragment: any;
   subscription: any;
@@ -19,7 +17,7 @@ export class AppComponent implements OnInit {
   constructor(public router: Router, public route: ActivatedRoute, public viewportScroller: ViewportScroller) {  }
  
   ngOnInit() {
-    Aos.init()
+    AOS.init();
   }
 
   ngAfterViewInit() {
@@ -29,10 +27,13 @@ export class AppComponent implements OnInit {
     });
   }
 
-  ngAfterViewChecked() {
-   let triangle_background_postion = document.querySelector<HTMLDivElement>(".triangle-background").getBoundingClientRect().top
+  @HostListener("window:scroll")
+  removeMenu() {
+  //  console.log(event)
+   let triangle_background_position = document.querySelector<HTMLDivElement>(".triangle-background").getBoundingClientRect().top
+  //  console.log(triangle_background_position)
 
-   if (triangle_background_postion < 75) {
+   if (triangle_background_position < 75) {
       document.querySelector<HTMLDivElement>(".navbar").style.display = "none"
    } else {
     document.querySelector<HTMLDivElement>(".navbar").style.display = "flex"
@@ -43,7 +44,11 @@ export class AppComponent implements OnInit {
     try {
       if (this.fragment) {
         // document.querySelector('#' + this.fragment).scrollIntoView({behavior: "smooth"});
-        this.viewportScroller.setOffset([0,80])
+        if (window.innerWidth >= 1440) {
+          this.viewportScroller.setOffset([0,150])
+        } else {
+          this.viewportScroller.setOffset([0,80])
+        }
         this.viewportScroller.scrollToAnchor(this.fragment)
       }
     } catch (e) { }

@@ -1,6 +1,10 @@
 .my-project-container {
     width: 90%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .my-project-headline {
@@ -21,16 +25,16 @@
 //     color: #5988FF;
 // }
 
-.my-projects {
-    width: 90%;
-    margin: auto;
-}
+// .my-projects {
+//     // width: 90%;
+//     // margin: auto;
+// }
 
 .project {
     position: relative;
     margin: 50px 0;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: center !important;
     // flex-direction: row-reverse;
 }
@@ -39,7 +43,7 @@
     position: relative;
     margin-bottom: 50px;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: center !important;
     // flex-direction: row-reverse;
 }
@@ -189,7 +193,9 @@
 
 
 .counter {
-    width: 55%;
+    //width: 55%;
+    padding-left: 100px;
+    width: 450px;
     display: flex;
     flex-direction: column
     // justify-content: flex-end; // flex-start to reverse
@@ -215,7 +221,9 @@
 }
 
 .counter-reverse {
-    width: 55%;
+    // width: 55%;
+    width: 450px;
+    padding-right: 100px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start; // flex-start to reverse
@@ -288,6 +296,7 @@
 
 .prasentation-btn-container {
     padding-top: 10px;
+    min-width: 320px;
     display: none;
 }
 

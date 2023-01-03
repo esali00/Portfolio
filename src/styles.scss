@@ -8,6 +8,22 @@ body,html {
     // overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5988FF; 
+  border-radius: 8px;
+}
+
 .padding-top-small-60 {
   padding-top: 60px;
 }
@@ -70,16 +86,6 @@ body,html {
 }
 
 
-@media (max-width: 1134px) {
-  .counter-1 {
-    padding-left: 80px;
-  }
-
-  .counter-3 {
-    padding-left: 80px
-  }
-}
-
 @media (max-width: 1004px) {
   .about-me-left-content h2 {
     font-size: 48px !important;
@@ -102,10 +108,12 @@ body,html {
   .counter {
     width: 45% !important;
     margin-top: 30px;
+    padding-left: 0 !important;
   }
   .counter-reverse {
     width: 45% !important;
     margin-top: 30px;
+    padding-right: 0 !important;
   }
   .my-projects {
     align-items: center;
@@ -115,7 +123,7 @@ body,html {
     align-items: center;
   }
   .project-info {
-    width: 320px !important;
+    width: 100% !important;
   }
   .project-info-reverse {
     width: 100% !important;
@@ -138,6 +146,9 @@ body,html {
 }
 
 @media (max-width: 768px) {
+    .about-me {
+      height: 110vh !important;
+    }
     .about-me-left-content h2 {
       font-size: 32px !important;
     }
@@ -160,9 +171,9 @@ body,html {
     .small-caption-name {
       font-size: 24px !important;
     }
-    .side-email {
-      margin-left: -70px !important;
-    }
+    // .side-email {
+    //   margin-left: -70px !important;
+    // }
     .send-a-message-btn {
       display: block !important;
     }
@@ -186,17 +197,21 @@ body,html {
     .counter-reverse {
       width: 60% !important;
     }
-    .project-info-reverse {
-      width: 300px !important;
-    }
-    .project-info-reverse p {
-      width: 300px !important;
-    }
+    // .project-info-reverse {
+    //   width: 300px !important;
+    // }
+    // .project-info-reverse p {
+    //   width: 300px !important;
+    // }
     .prasentation-btn-container {
       width: 320px !important;
     }
     .about-me-button {
       display: none;
+    }
+    .contact-me-section h2 {
+      font-size: 54px !important;
+      text-align: center;
     }
     .contact-me-form-headline h3 {
       font-size: 24px !important;
@@ -207,17 +222,6 @@ body,html {
       justify-content: center !important;
       margin-bottom: 30px !important;
     }
-}
-
-@media (max-width: 500px) {
-  .about-me-left-content h2 {
-    font-size: 28px !important;
-  }
-  .about-me-left-content p {
-    font-size: 12px !important;
-    width: 90% !important;
-    margin: auto !important;
-  }
 }
 
 @media (max-width: 480px) {
@@ -233,7 +237,7 @@ body,html {
   }
   .side-email {
     margin-top: -55px !important;
-    margin-left: -55px !important;
+    margin-left: -30px !important;
   }
   .scroll-area {
     margin: 60px auto !important;
@@ -251,6 +255,9 @@ body,html {
   }
   .my-skill-icons-container {
     margin-bottom: 50px !important;
+  }
+  .my-projects {
+    width: 320px !important;
   }
   .project {
     align-items: flex-start !important;
@@ -282,15 +289,18 @@ body,html {
   .project-img {
     width: 275px !important;
   }
+  .border-hover {
+    left: 70px !important;
+  }
   .border-img {
     border: 5px solid transparent;
     width: 275px !important;
-    left: 50%;
+    left: 57% !important; 
   }
   .border-img-reverse {
     border: 5px solid transparent;
     width: 275px !important;
-    left: 40% !important;
+    left: 49% !important;
   }
   .counter-mobile {
     width: 310px !important;
@@ -317,6 +327,10 @@ body,html {
   }
   .contact-me-form-headline h3 {
     font-size: 21px !important;
+    text-align: center;
+  }
+  .contact-me-form-headline p {
+    text-align: center;
   }
   .contact-me-footer {
      flex-direction: column;
@@ -342,6 +356,36 @@ body,html {
     margin-right: -45px;
   }
 
+}
+
+@media only screen and (max-width: 480px) {
+  .aos-animate {
+
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .about-me-left-content p {
+    width: 280px;
+  }
 }
 
 

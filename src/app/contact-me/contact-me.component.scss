@@ -8,7 +8,7 @@
 }
 
 .triangle-background {
-  margin-bottom: -1px;
+  margin-bottom: -2px;
   height: 200px;
   width: 100%;
   background: black;
@@ -48,6 +48,7 @@
 }
 
 .contact-form {
+    position: relative;
     width: 70%;
     margin: auto;
     display: flex;
@@ -108,6 +109,23 @@
     background-color: transparent;
     border: 3px solid white;
     padding: 10px 25px;
+}
+
+.email-send {
+  // margin-top: 20px;
+  position: absolute;
+  bottom: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  color: #5988FF;
+  border: 2px solid #5988FF;
+  border-radius: 8px;
+
+}
+
+.checkmark {
+  color: #5988FF
 }
 
 .form-button:hover {

@@ -15,7 +15,7 @@ export class MySkillsComponent implements OnInit {
   constructor(public router: Router) { }
 
   ngOnInit(): void {
-    AOS.init()
+    AOS.init();
     this.hoverCircleMovement()
   }
 

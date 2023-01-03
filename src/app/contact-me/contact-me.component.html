@@ -14,36 +14,41 @@
         <form (submit)="sendMail()" ngNativeValidate #myForm id="contact-form" class="contact-form">
             <mat-form-field class="example-full-width">
               <mat-label>Your name</mat-label>
-              <input pattern="^[a-zA-Z ]*$" required #nameField name="name" id="name" class="white" matInput placeholder="" value="">
+              <input pattern="^[a-zA-Z ]*$"  #nameField name="name" id="name" class="white" matInput placeholder="" value="" required>
             </mat-form-field>
 
             <mat-form-field class="example-full-width">
                 <mat-label>Your email</mat-label>
-                <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required id="email" class="white" matInput placeholder="" value="">
+                <input #emailField pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="email"  id="email" class="white" matInput placeholder="" value="" required>
               </mat-form-field>
           
             <mat-form-field class="example-full-width">
               <mat-label>Leave a comment</mat-label>
-              <textarea required #messageField name="message" id="message" rows="10" class="white" matInput placeholder="Your message"></textarea>
+              <textarea #messageField name="message" id="message" rows="10" class="white" matInput placeholder="Your message" required></textarea>
             </mat-form-field>
+
+            <span class="email-send d-none">
+              Email has been sent! <span class="checkmark">&#10004;</span>
+            </span>
 
             <button #formButton class="form-button">
                 Send message
             </button>
+
           </form>
 
         <div class="contact-me-footer">
             <div class="copyright">
                 <img src="assets/img/introduction/initials_logo_white.png">
-                <span>&copy; Emir Salihovic 2022</span>
+                <span>&copy; Emir Salihovic 2023</span>
             </div>
 
             <div class="social-media">
                <img (click)="scrollToTop()" class="footer-arrow" src="assets/img/arrows/footer_arrow.svg">
                <div class="social-media-icons">
-                  <a href="https://github.com/esali00"><img  src="assets/img/footer/github_icon.svg"></a>
-                  <a href="mailto:e.salihovic@outlook.de"><img src="assets/img/footer/email_icon.svg"></a>
-                  <a href="https://www.linkedin.com/in/emir-salihovic-a6532125a/"><img src="assets/img/footer/linkedin_icon.svg"></a>
+                  <a href="https://github.com/esali00" target="_blank"><img  src="assets/img/footer/github_icon.svg"></a>
+                  <a href="mailto:e.salihovic@outlook.de" target="_blank"><img src="assets/img/footer/email_icon.svg"></a>
+                  <a href="https://www.linkedin.com/in/emir-salihovic-a6532125a/" target="_blank"><img src="assets/img/footer/linkedin_icon.svg"></a>
                </div>
                <div class="imprint-and-legal-notice">
                 <span routerLink="/imprint&legal-notice">Imprint & Legal Notice</span> 
