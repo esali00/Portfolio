@@ -225,6 +225,9 @@ body,html {
 }
 
 @media (max-width: 480px) {
+  body,html {
+    overflow-x: hidden;
+  }
   .introduction-profession {
     margin-top: 70px !important;
     font-size: 40px !important;
@@ -359,6 +362,7 @@ body,html {
 }
 
 @media only screen and (max-width: 480px) {
+
   .aos-animate {
 
     -o-transition-property: none !important;
