@@ -47,6 +47,10 @@
     padding: 10px 30px;   
 }
 
+.links a:hover {
+    transform: scale(1.05);
+}
+
 .about-me-link::after {
     content: ""; /* This is necessary for the pseudo element to work. */ 
     display: block; /* This will put the pseudo element on its own line. */
